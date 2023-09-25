@@ -34,6 +34,7 @@ img {
     margin: 0 auto;
 }
 
+
 /*header*/
 
 .header-page {
@@ -523,9 +524,6 @@ img {
     display: flex;
     align-items: baseline;
 }
-/* 
-.footer-icon-container {
-} */
 
 .footer-icon-text {
     color: var(--WHITE, #FFF);

@@ -17,7 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <!--header-->
@@ -49,6 +50,105 @@
             </li>
           </ul>
         </address>
+        <!-- button-menu-open -->
+        <button class="button-menu" type="button">
+          <svg
+            class="button-menu-icon"
+            width="24"
+            height="24"
+            aria-label="icon button open menu"
+          >
+            <use href="./images/icons.svg#icon-header-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mob menu -->
+      <!-- убрал is-open -->
+      <div class="mob-menu-container">
+        <button class="menu-button-close" type="button">
+          <svg
+            class="menu-icon-close"
+            width="8"
+            height="8"
+            aria-label="close icon mobile menu"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav-container">
+          <ul class="mob-menu-nav-list-container">
+            <li class="list-menu">
+              <a class="mob-menu-nav-link curent" href="./index.html"
+                >Studio
+              </a>
+            </li>
+            <li class="list-menu">
+              <a class="mob-menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="list-menu">
+              <a class="mob-menu-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mob-menu-address">
+          <ul class="mob-menu-address-container">
+            <li>
+              <a class="mob-menu-address-list-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mob-menu-address-list" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="menu-social">
+          <li class="menu-social-icon">
+            <a href="https://www.instagram.com/" class="menu-icon">
+              <svg
+                class="menu-svg"
+                width="24"
+                height="24"
+                aria-label="instagram"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-icon">
+            <a href="https://twitter.com/" class="menu-icon">
+              <svg class="menu-svg" width="24" height="24" aria-label="twitter">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-icon">
+            <a href="https://www.facebook.com" class="menu-icon">
+              <svg
+                class="menu-svg"
+                width="24"
+                height="24"
+                aria-label="facebook"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-social-icon">
+            <a href="https://www.linkedin.com/" class="menu-icon">
+              <svg
+                class="menu-svg"
+                width="24"
+                height="24"
+                aria-label="linkedin"
+              >
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!--main-->
@@ -63,7 +163,7 @@
 
       <section class="skills">
         <div class="container">
-          <!--тимчасовий заголовок-->
+          <!--скритий заголовок-->
           <h2 class="visually-hidden">Our skills</h2>
           <ul class="skills-list">
             <li class="skills-item">
@@ -144,6 +244,10 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/team/img-1.jpg    1x,
+                  ./images/team/img-1@2x.jpg 2x
+                "
                 src="./images/team/img-1.jpg"
                 width="264"
                 alt="MarkGuerrero"
@@ -204,7 +308,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team/img-2.jpg" width="264" alt="TomFord" />
+              <img
+                srcset="
+                  ./images/team/img-2.jpg    1x,
+                  ./images/team/img-2@2x.jpg 2x
+                "
+                src="./images/team/img-2.jpg"
+                width="264"
+                alt="TomFord"
+              />
               <div class="team-container">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -262,6 +374,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/team/img-3.jpg    1x,
+                  ./images/team/img-3@2x.jpg 2x
+                "
                 src="./images/team/img-3.jpg"
                 width="264"
                 alt="CamilaGarcia"
@@ -323,6 +439,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/team/img-4.jpg    1x,
+                  ./images/team/img-4@2x.jpg 2x
+                "
                 src="./images/team/img-4.jpg"
                 width="264"
                 alt="DanielWilson"
@@ -393,6 +513,15 @@
             <li class="portfolio-item">
               <div class="portfolio-containar-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio/img1.jpg           360w,
+                    ./images/portfolio/img1@2x.jpg        720w,
+                    ./images/portfolio/img1-tablet.jpg    356w,
+                    ./images/portfolio/img1-tablet@2x.jpg 712w,
+                    ./images/portfolio/img1-mob.jpg       288w,
+                    ./images/portfolio/img1-mob@2x.jpg    576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/img1.jpg"
                   width="360"
                   alt="Banking App"
@@ -411,6 +540,15 @@
             <li class="portfolio-item">
               <div class="portfolio-containar-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio/img2.jpg           360w,
+                    ./images/portfolio/img2@2x.jpg        720w,
+                    ./images/portfolio/img2-tablet.jpg    356w,
+                    ./images/portfolio/img2-tablet@2x.jpg 712w,
+                    ./images/portfolio/img2-mob.jpg       288w,
+                    ./images/portfolio/img2-mob@2x.jpg    576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/img2.jpg"
                   width="360"
                   alt="Cashless Payment"
@@ -429,6 +567,15 @@
             <li class="portfolio-item">
               <div class="portfolio-containar-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio/img3.jpg           360w,
+                    ./images/portfolio/img3@2x.jpg        720w,
+                    ./images/portfolio/img3-tablet.jpg    356w,
+                    ./images/portfolio/img3-tablet@2x.jpg 712w,
+                    ./images/portfolio/img3-mob.jpg       288w,
+                    ./images/portfolio/img3-mob@2x.jpg    576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/img3.jpg"
                   width="360"
                   alt="Meditation App"
@@ -447,6 +594,15 @@
             <li class="portfolio-item">
               <div class="portfolio-containar-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio/img4.jpg           360w,
+                    ./images/portfolio/img4@2x.jpg        720w,
+                    ./images/portfolio/img4-tablet.jpg    356w,
+                    ./images/portfolio/img4-tablet@2x.jpg 712w,
+                    ./images/portfolio/img4-mob.jpg       288w,
+                    ./images/portfolio/img4-mob@2x.jpg    576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/img4.jpg"
                   width="360"
                   alt="Taxi Service"
@@ -465,6 +621,15 @@
             <li class="portfolio-item">
               <div class="portfolio-containar-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio/img5.jpg           360w,
+                    ./images/portfolio/img5@2x.jpg        720w,
+                    ./images/portfolio/img5-tablet.jpg    356w,
+                    ./images/portfolio/img5-tablet@2x.jpg 712w,
+                    ./images/portfolio/img5-mob.jpg       288w,
+                    ./images/portfolio/img5-mob@2x.jpg    576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/img5.jpg"
                   width="360"
                   alt="Screen Illustrations"
@@ -483,6 +648,15 @@
             <li class="portfolio-item">
               <div class="portfolio-containar-overlay">
                 <img
+                  srcset="
+                    ./images/portfolio/img6.jpg           360w,
+                    ./images/portfolio/img6@2x.jpg        720w,
+                    ./images/portfolio/img6-tablet.jpg    356w,
+                    ./images/portfolio/img6-tablet@2x.jpg 712w,
+                    ./images/portfolio/img6-mob.jpg       288w,
+                    ./images/portfolio/img6-mob@2x.jpg    576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/img6.jpg"
                   width="360"
                   alt="Online Courses"
@@ -594,7 +768,8 @@
       </div>
     </footer>
     <!-- modal window -->
-    <div class="backdrop is-open">
+    <!-- убрал is-open -->
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg
