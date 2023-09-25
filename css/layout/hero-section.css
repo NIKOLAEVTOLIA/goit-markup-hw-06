@@ -6,7 +6,7 @@
     max-width: 767px;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-            url(../../images/hero/people-office-mob.jpg);
+            url(../../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +18,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../../images/hero/people-office-mob@2x.jpg); 
+                url(../../images/people-office-mob@2x.jpg); 
                 /* 2ximg */
     }
 }
@@ -31,7 +31,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         max-width: 1157px;
         background-color: #2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-            url(../../images/hero/people-office-tablet.jpg);
+            url(../../images/people-office-tablet.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -44,7 +44,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../../images/hero/people-office-tablet@2x.jpg);
+                url(../../images/people-office-tablet@2x.jpg);
     }
 }
 
@@ -56,7 +56,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         max-width: 1440px;
         background-color: #2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-            url(../../images/hero/people-office.jpg);
+            url(../../images/people-office.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -69,7 +69,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../../images/hero/people-office@2x.jpg);
+                url(../../images/people-office@2x.jpg);
     }
 }
 
